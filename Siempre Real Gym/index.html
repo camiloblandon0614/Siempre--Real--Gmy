@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siempre Real Gym</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <!-- Header -->
+    <header>
+        <h1>SIEMPRE REAL GYM</h1>
+        <p>Transforma tu cuerpo. Transforma tu vida.</p>
+    </header>
+
+    <!-- Carrusel -->
+    <div class="carousel">
+        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" class="active">
+        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg">
+        <img src="https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg">
+        <img src="https://images.pexels.com/photos/3763872/pexels-photo-3763872.jpeg">
+    </div>
+
+    <!-- Servicios -->
+    <section class="services">
+        <h2>Servicios Principales</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg">
+                <h3>Entrenamiento Personal</h3>
+                <p>Planes personalizados según tus objetivos.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1552107/pexels-photo-1552107.jpeg">
+                <h3>Zona de Pesas</h3>
+                <p>Equipos profesionales de última generación.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg">
+                <h3>Cardio & Funcional</h3>
+                <p>Cinta, bicicleta, elípticas y clases funcionales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes -->
+    <section class="pricing">
+        <h2>Planes Disponibles</h2>
+
+        <div class="prices">
+            <div class="plan">
+                <h3>Plan Básico</h3>
+                <p>$75.000 / mes</p>
+                <ul>
+                    <li>Acceso general</li>
+                    <li>Zona de pesas</li>
+                    <li>Cardio</li>
+                </ul>
+            </div>
+
+            <div class="plan destacado">
+                <h3>Plan Premium</h3>
+                <p>$110.000 / mes</p>
+                <ul>
+                    <li>Acceso total</li>
+                    <li>Entrenador personal</li>
+                    <li>Asesoría nutricional</li>
+                </ul>
+            </div>
+
+            <div class="plan">
+                <h3>Plan Pareja</h3>
+                <p>$150.000 / mes</p>
+                <ul>
+                    <li>Acceso para 2 personas</li>
+                    <li>Clases grupales</li>
+                    <li>Zona funcional</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery">
+        <h2>Galería Siempre Real</h2>
+        <div class="gallery-container">
+            <img src="https://images.pexels.com/photos/4164771/pexels-photo-4164771.jpeg">
+            <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg">
+            <img src="https://images.pexels.com/photos/1552108/pexels-photo-1552108.jpeg">
+            <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg">
+            <img src="https://images.pexels.com/photos/6453391/pexels-photo-6453391.jpeg">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Siempre Real Gym — Todos los derechos reservados CamiloBlandon@ 2026</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/573001112233" class="whatsapp" target="_blank">
+        💬
+    </a>
+
+    <script>
+        /* Carrusel automático */
+        const images = document.querySelectorAll('.carousel img');
+        let idx = 0;
+
+        setInterval(() => {
+            images.forEach(img => img.classList.remove("active"));
+            idx = (idx + 1) % images.length;
+            images[idx].classList.add("active");
+        }, 4000);
+    </script>
+ 
+</body>
+</html>
